@@ -1,0 +1,558 @@
+Podsumowanie,Klucz zgłoszenia,Id. zgłoszenia,Typ zgłoszenia,Status,Klucz projektu,Nazwa projektu,Typ projektu,Lider projektu,Id lidera projektu,Opis projektu,Priorytet,Rozwiązanie,Osoba przypisana,ID osoby przypisanej,Osoba zgłaszająca,ID osoby zgłaszającej,Twórca,ID twórcy,Utworzono,Zaktualizowano,Ostatnio wyświetlane,Rozwiązane,Termin,Głosy,Opis,Środowisko,Obserwujący,ID obserwujących,Pierwotne oszacowanie,Pozostały koszt,Czas poświęcony,Stosunek pracy,Σ Pierwotne oszacowanie,Σ Pozostały koszt,Σ Czas poświęcony,Poziom zabezpieczeń,Zewnętrzne łącze do zgłoszenia (Blocks),Pole niestandardowe (Affected services),Pole niestandardowe (Change completion date),Pole niestandardowe (Change reason),Pole niestandardowe (Change risk),Pole niestandardowe (Change start date),Pole niestandardowe (Change type),Pole niestandardowe (Development),Pole niestandardowe (Epic Color),Pole niestandardowe (Epic Link),Pole niestandardowe (Epic Name),Pole niestandardowe (Epic Status),Pole niestandardowe (Impact),Pole niestandardowe (Issue color),Pole niestandardowe (Rank),Pole niestandardowe (Request Type),Pole niestandardowe (Request language),Pole niestandardowe (Request participants),Ocena zadowolenia,Pole niestandardowe (Start date),Pole niestandardowe (Story Points),Pole niestandardowe (Story point estimate),Pole niestandardowe (Target end),Pole niestandardowe (Target start),Pole niestandardowe (Time to first response),Pole niestandardowe (Time to resolution),Pole niestandardowe ([CHART] Date of First Response),Kategoria statusu
+Attempt to login to admin account,TSL-22,10028,Błąd w programie,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,High,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 10:19 PM,12/lut/21 10:26 PM,12/lut/21 10:25 PM,,,0,"*Summary:*
+Login to admin account by using provided admin Password and Email Address it is impossible, we receive communicate like ""Login Details Incorrect. Please try again."".
+
+*Steps to reproduce:*
+1. Go to [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter admin Email address 
+4. Enter admin Password 
+5. Confirm reCaptcha
+6  Click on Login button
+
+*Test data:*
+
+Email Address: admin@test.pl
+
+Password: admin
+
+*Expected result:*
+System, should give us access to admin account.
+
+*Actual result:*
+We have no access to admin account, ""Login Details Incorrect. Please try again."" communicate receive.
+
+*Source URL:* [https://phptravels.org/clientarea.php|https://phptravels.org/clientarea.php]",Safari 14.0.1 ,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i00067:,,,,,,,,,,,,,Do zrobienia
+Wrong Home button functionality ,TSL-21,10027,Błąd w programie,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Low,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 10:06 PM,12/lut/21 10:09 PM,12/lut/21 10:08 PM,,,0,"*Summary:*
+After click on Home button on login page, system take us back to login page (same page). Not to the main page like it should.
+
+*Steps to reproduce:*
+1. Go to [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Click on Home button
+
+*Expected result:*
+System, should take us back to main page: ""[https://phptravels.com/demo/|https://phptravels.com/demo/]"" 
+
+*Actual result:*
+System take us to login page: ""[https://phptravels.org/clientarea.php|https://phptravels.org/clientarea.php]""
+
+Source URL: [https://phptravels.org/clientarea.php|https://phptravels.org/clientarea.php]",Safari 14.0.1,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,TSL-3,,,,,,,{},,,,,,,0|i0005z:,,,,,,,,,,,,,Do zrobienia
+ID: 20 Verify that the “Remember Me” checkbox is unselected by default ,TSL-20,10026,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 7:40 PM,12/lut/21 7:40 PM,12/lut/21 7:50 PM,,,0,"*Description:*
+Verify that the “Remember Me” checkbox is unselected by default.
+
+*Test steps:*
+1. Go to site https://phptravels.com/demo/
+2. Click on Login button 
+3. Check ""Remember Me"" check box
+
+*Test data:*
+-
+
+*Expected result:*
+""Remember Me"" check box is unselected by default.
+
+*Result:*
+As expected.
+
+*Pass/Fail:*
+Pass
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0005r:,,,,,,,,,,,,,Do zrobienia
+ID: 19 Verify that the user should not be able to login with the old password after changing the password,TSL-19,10025,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 7:28 PM,12/lut/21 7:28 PM,12/lut/21 7:28 PM,,,0,"Description:
+Verify that the User should be able to login with the new password after changing the password.
+
+Test steps:
+1. Go to https://phptravels.com/demo
+2. Click on Login button
+3. Click on Forgot password button
+4. Provide Email Address
+5. Confirm reCaptcha 
+6. Click on button Submit
+7. Receive an email and click on reset account link
+8. Enter New password
+9. Confirm new password
+10. Click on ""Save Changes"" button
+11. Click Logout button after system make you logged automatically.
+12. Click ""Click here to continue..."" button
+13. Enter Email Address
+14. Enter old Password
+15. Confirm reCaptcha
+16. Click Login button
+
+Test data:
+Email Address: Konradgru94@gmail.com
+Password: kajak001
+
+Expected result:
+System will not let you to your account.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0005j:,,,,,,,,,,,,,Do zrobienia
+ID: 18 Verify that the User should be able to login with the new password after changing the password,TSL-18,10024,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 7:19 PM,12/lut/21 7:19 PM,12/lut/21 10:23 PM,,,0,"*Description:*
+Verify that the User should be able to login with the new password after changing the password
+
+*Test steps:*
+1. Go to https://phptravels.com/demo
+2. Click on Login button
+3. Click on Forgot password button
+4. Provide Email Address
+5. Confirm reCaptcha 
+6. Click on button Submit
+7. Receive an email and click on reset account link
+8. Enter New password
+9. Confirm new password
+10. Click on ""Save Changes"" button
+11. Click Logout button after system make you logged automatically.
+12. Click ""Click here to continue..."" button
+13. Enter Email Address
+14. Enter new valid Password
+15. Confirm reCaptcha
+16. Click Login button
+
+*Test data:*
+Email Address: Konradgru94@gmail.com
+Password: newpassword
+
+*Expected result:*
+System move you too logged mode.
+
+*Result:*
+As expected.
+
+*Pass/Fail:*
+Pass
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0005b:,,,,,,,,,,,,,Do zrobienia
+ID: 17 Verify the password can be copy-pasted. System shouldn’t allow users to copy paste password,TSL-17,10023,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 7:02 PM,12/lut/21 7:02 PM,12/lut/21 7:04 PM,,,0,"Description:
+Verify the password can be copy-pasted. System shouldn’t allow users to copy paste password.
+
+Test steps:
+1. Go to site https://phptravels.com/demo/
+2. Click on Login button
+3. Copy the Password from your source 
+5. Past Password to text box of your browser
+
+Test data:
+Password - kajak001
+
+Expected result:
+Password can't be copied.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i00053:,,,,,,,,,,,,,Do zrobienia
+ID: 16 Check that encrypted characters in the “Password” field should not allow deciphering if copied,TSL-16,10022,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 6:52 PM,12/lut/21 6:57 PM,12/lut/21 6:59 PM,,,0,"Description:
+Verify that encrypted characters in the “Password” field should not allow deciphering if copied.
+
+Test steps:
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter Password
+4. Copy the Password which you provide in text box
+5. Past Password to text box of your browser
+
+Test data:
+Password - kajak001
+
+Expected result:
+Password can't be deciphering.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0004v:,,,,,,,,,,,,,Do zrobienia
+ID: 15 Check that the password is in encrypted form  (masked format) when entered,TSL-15,10021,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 6:44 PM,12/lut/21 6:52 PM,12/lut/21 6:59 PM,,,0,"Description:
+Check that the password is in encrypted form  (masked format) when entered.
+
+Test steps:
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter Password
+4. Check that provided password is encrypted
+
+Test data:
+Email Address -Konradgru94@gmail.com
+Password -kajak001
+
+Expected result:
+Provided password is encrypted.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0004n:,,,,,,,,,,,,,Do zrobienia
+ID: 14 Check that clicking on the browser back button after successful logout should not take the User to a logged-in mode,TSL-14,10020,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 6:36 PM,12/lut/21 6:53 PM,12/lut/21 6:52 PM,,,0,"Description:
+Check that clicking on the browser back button after successful logout should not take the User to a logged-in mode
+
+Test steps:
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter valid Email Address
+4. Enter valid Password
+5. Confirm reCaptcha
+6. Click on Login button
+7.Click on Log out button
+7. Click on back button in browser
+
+Test data:
+Email Address - Konradgru94@gmail.com
+Password - kajak001
+
+Expected result:
+Back button should not take the User to logged in mode.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0004f:,,,,,,,,,,,,,Do zrobienia
+ID: 13 Check that clicking on the browser back button after successful login should not take the User to log out mode,TSL-13,10019,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Low,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,12/lut/21 6:28 PM,12/lut/21 6:53 PM,12/lut/21 6:54 PM,,,0,"*Description:*
+Check that clicking on the browser back button after successful login should not take the User to log out mode
+
+*Test steps:*
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter valid Email Address
+4. Enter valid Password
+5. Confirm reCaptcha
+6. Click on Login button
+7. Click on back button in browser
+
+*Test data:*
+Email Address - Konradgru94@gmail.com
+Password - kajak001
+
+*Expected result:*
+Back button should not take the User to log out mode.
+
+*Result:*
+Back button take the User to log out mode.
+
+*Pass/Fail:*
+Fail
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i00047:,,,,,,,,,,,,,Do zrobienia
+ID: 12 Verify that the User is not able to log in with a blank Username or Password,TSL-12,10018,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 11:30 PM,11/lut/21 11:30 PM,12/lut/21 6:53 PM,,,0,"Description:
+Verify that the User is not able to log in with a blank Username or Password.
+
+Test steps:
+1. Go to site https://phptravels.com/demo/
+2. Click on Login button
+3. Confirm reCaptcha
+4. Click on Login button
+
+Test data:
+-
+
+Expected result:
+We should get communicate like ""Login Details Incorrect. Please try again."" without access to user account.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0003z:,,,,,,,,,,,,,Do zrobienia
+ID: 11 Verify that the User is not able to Login with an invalid Email Address and valid Password,TSL-11,10017,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 11:24 PM,11/lut/21 11:37 PM,12/lut/21 6:53 PM,,,0,"Description:
+Verify that the User is not able to Login with an invalid Email Address and valid Password.
+
+Test steps:
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter invalid Email Address
+4. Enter valid Password
+
+5 .Confirm reCaptcha
+6. Click on Login button
+
+Test data:
+Email Address: Konradgru94@gmail.com
+Password: admin
+
+Expected result:
+We should get communicate like ""Login Details Incorrect. Please try again."" without access to user account.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0003r:,,,,,,,,,,,,,Do zrobienia
+ID: 10 Verify that the User is not able to Login with an valid Email Address and invalid Password,TSL-10,10016,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 11:20 PM,11/lut/21 11:37 PM,12/lut/21 6:54 PM,,,0,"Description:
+Verify that the User is not able to Login with an valid Email Address and invalid Password.
+
+Test steps:
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter valid Email Address
+4. Enter invalid Password
+
+5 .Confirm reCaptcha
+6. Click on Login button
+
+Test data:
+Email Address: admin@test.pl
+Password: Konrad
+
+Expected result:
+We should get communicate like ""Login Details Incorrect. Please try again."" without access to user account.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0003j:,,,,,,,,,,,,,Do zrobienia
+ID: 09 Verify that the User is not able to Login with an invalid Email Address and invalid Password,TSL-9,10015,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 11:13 PM,11/lut/21 11:35 PM,12/lut/21 5:26 PM,,,0,"*Description:*
+Verify that the User is not able to Login with an invalid Email Address and invalid Password.
+
+*Test steps:*
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button
+3. Enter invalid Email Address
+4. Enter invalid Password
+
+5 .Confirm reCaptcha
+
+6. Click on Login button
+
+*Test data:*
+Email Address: Konradgru94@gmail.com
+Password: Konrad
+
+*Expected result:*
+We should get communicate like ""Login Details Incorrect. Please try again."" without access to user account.
+
+*Result:*
+As expected.
+
+*Pass/Fail:*
+Pass
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0003b:,,,,,,,,,,,,,Do zrobienia
+ID: 08 Check that the User is able to Login with Valid Credentials,TSL-8,10014,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Highest,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 11:05 PM,11/lut/21 11:36 PM,11/lut/21 11:36 PM,,,0,"*Description:*
+Check that the User is able to Login with Valid Credentials
+
+*Test steps:*
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button 
+3. Enter valid Email Address
+4. Enter valid Password
+
+5 .Confirm reCaptcha
+6. Click on Login button.
+
+*Test data:*
+Email Address: admin@test.pl
+Password: admin
+
+*Expected result:*
+Next menu page should be loaded, we should have an access to account.
+
+*Result:*
+We received communicate ""Login Details Incorrect. Please try again."", there's no access to account.
+
+*Pass/Fail:*
+Fail
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i00033:,,,,,,,,,,,,,Do zrobienia
+ID: 07 Verify whether all the text boxes have a  maximum length,TSL-7,10013,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 10:52 PM,11/lut/21 10:53 PM,11/lut/21 10:53 PM,,,0,"*Description:*
+Verify whether all the text boxes have a maximum length.
+
+*Test steps:*
+1. Go to site https://phptravels.com/demo/
+2. Click on Login button 
+3. Enter 100 times letter ""H"" to Email Address text box
+4. Enter 100 times letter ""H"" to Password text box
+
+*Test data:*
+Email Address: 100 times letter ""H""
+Password: 100 times letter ""H""
+
+*Expected result:*
+Text box should limit the amount of sings.
+
+*Result:*
+Password text box and Email Address text box doesn't limit the amount of sings.
+
+*Pass/Fail:*
+Fail
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0002v:,,,,,,,,,,,,,Do zrobienia
+ID: 06 Check that all fields such as Email Address Password has a valid placeholder,TSL-6,10012,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 10:37 PM,11/lut/21 11:08 PM,11/lut/21 11:07 PM,,,0,"*Description:*
+Check that all fields such as Username, Password has a valid placeholder.
+
+*Test steps:*
+1. Go to site https://phptravels.com/demo/
+2. Click on Login button
+3.Check fields Username, Password
+
+*Test data:*
+-
+
+*Expected result:*
+Fields such as Username, Password has a valid placeholder.
+
+*Result:*
+As expected.
+
+*Pass/Fail:*
+Pass
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0002n:,,,,,,,,,,,,,Do zrobienia
+ID: 05 Verify that Enter key works as a substitute for the Sign-in button without reCaptcha check box confirmed,TSL-5,10011,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 10:31 PM,11/lut/21 10:38 PM,11/lut/21 10:38 PM,,,0,"Description:
+Verify that Enter key works as a substitute for the Sign-in button without reCaptcha check box confirmed.
+
+Test steps:
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button 
+3. Enter Email Address
+4. Enter Password
+6. Click Enter key
+
+Test data:
+Email Address: Konradgru94@gmail.com
+Password: Konrad
+
+Expected result:
+Page should be loaded and information ""Please complete the captcha and try again."" should appear under login section.
+
+Result:
+As expected.
+
+Pass/Fail:
+Pass
+
+Browser:
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0002f:,,,,,,,,,,,,,Do zrobienia
+ID: 04 Verify that Enter key works as a substitute for the Sign-in button with reCaptcha check box confirmed,TSL-4,10010,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Low,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 10:27 PM,11/lut/21 10:38 PM,11/lut/21 10:38 PM,,,0,"*Description:*
+Verify that Enter key works as a substitute for the Sign-in button with reCaptcha check box confirmed
+
+*Test steps:*
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button 
+3. Enter Email Address
+4. Enter Password
+5. Click on reCaptcha check box to confirm that you are not a robot.
+6. Click Enter key
+
+*Test data:*
+Email Address: Konradgru94@gmail.com
+Password: Konrad
+
+*Expected result:*
+Page should be loaded and information ""Login Details Incorrect. Please try again."" should appear under login section.
+
+*Result:*
+No reaction for click on enter key.
+
+*Pass/Fail:*
+Fail
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i00027:,,,,,,,,,,,,,Do zrobienia
+ID: 03 Check bar buttons functionality is working properly or not,TSL-3,10009,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 9:36 PM,12/lut/21 10:06 PM,12/lut/21 7:49 PM,,,0,"*Description:*
+Check that bar buttons functionality on login page is working properly or not working.
+
+*Test steps:*
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button 
+3. Click on every single tab buttons like Home, Store, Announcements, Knowledgebase, Network Status, Affiliates, Contact Us, Account
+
+*Test data:*
+-
+
+*Expected result:*
+Every bar button works properly, with expected result.
+
+*Result:*
+Home button direct us to login page (login section), not to main page.
+
+*Pass/Fail:*
+Fail
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0001z:,,,,,,,,,,,,,Do zrobienia
+ID: 02 Verify that cursor is focused on the “Email Address” text box,TSL-2,10008,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Medium,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 9:02 PM,11/lut/21 11:09 PM,11/lut/21 11:09 PM,,,0,"*Description:* 
+Verify that cursor is focused on the “Email Address” text box on the page load (login page).
+
+*Test steps:*
+
+# Go to [https://phptravels.com/demo/|https://phptravels.com/demo/]
+# Click on Log in button
+# Move cursor on “Username” text box
+
+*Test data:*
+
+-
+
+*Expected result:*
+
+Cursor is focused on the “Username” text box on the page load (login page).
+
+*Result:*
+
+As expected.
+
+*Pass/Fail:*
+
+Pass
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0001r:,,,,,,,,,,,,,Do zrobienia
+ID: 01 Check login screen elements,TSL-1,10007,Test,Do zrobienia,TSL,Testowanie sekcji login,software,Konrad Grudziński,5ffdcca79edf280075cf278e,,Lowest,,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,Konrad Grudziński,5ffdcca79edf280075cf278e,11/lut/21 8:53 PM,11/lut/21 9:07 PM,12/lut/21 7:46 PM,,,0,"*Description:*
+Check login screen elements like username, password, sign in button, remember password check box, Forgot password link, and create an account link.
+
+*Test steps:*
+1. Go to site [https://phptravels.com/demo/|https://phptravels.com/demo/]
+2. Click on Login button 
+3. Check for Enter email, Password, Login button, Remember Me check box, Forgot Password link, create an account link, reCAPTCHA check box
+
+*Test data:*
+
+-
+
+*Expected result:*
+Enter email, Password, Login button, Remember Me check box, Forgot Password link, create an account link, reCAPTCHA check box exists on login page.
+
+*Result:*
+Create an account link doesn't exist on login page.
+
+*Pass/Fail:*
+Fail
+
+*Browser:*
+Safari 14.0.1",,Konrad Grudziński,5ffdcca79edf280075cf278e,,,,,,,,,,,,,,,,{},,,,,,,0|i0001j:,,,,,,,,,,,,,Do zrobienia
